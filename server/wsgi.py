@@ -1,5 +1,5 @@
 """
-WSGI config for projectmanager project.
+WSGI config for kettering project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
