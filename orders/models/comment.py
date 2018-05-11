@@ -11,4 +11,5 @@ class Comment(models.Model):
     menu_item = models.ForeignKey('orders.MenuItem', on_delete=models.SET_NULL, null=True, related_name='comments')
 
     rate = models.DecimalField(max_digits=3, decimal_places=2, default=0)  # TODO: add validator for min_value=0, max_value=5,
+    text = models.CharField(max_length=255, blank=True)
     date_created = models.DateTimeField(auto_now_add=timezone.now, null=True)
