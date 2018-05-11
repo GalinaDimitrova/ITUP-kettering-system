@@ -25,7 +25,6 @@ class MenuItem(models.Model):
 
     item_type = models.CharField(max_length=20, choices=ITEM_TYPES_CHOICES, default=OTHER)
     name = models.CharField(max_length=120, blank=True)
-    address = models.CharField(max_length=120, blank=True)
     description = models.CharField(max_length=255, blank=True)
     rate = models.DecimalField(max_digits=3, decimal_places=2, default=0)  # TODO: add validator for min_value=0, max_value=5,
     price = models.DecimalField(max_digits=10, decimal_places=2, default=0)  # TODO: add validator for min_value=0
